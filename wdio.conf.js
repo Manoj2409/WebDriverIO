@@ -239,7 +239,10 @@ export const config = {
      * @param {boolean} result.passed    true if test has passed, otherwise false
      * @param {object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
-    // afterTest: function(test, context, { error, result, duration, passed, retries }) {
+    //  afterTest: async function(test, context, { error, result, duration, passed, retries }) {
+    //     if(error || passed){
+    //         await browser.takeScreenshot();
+    //     }
     // },
 
 

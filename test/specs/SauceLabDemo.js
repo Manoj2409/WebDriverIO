@@ -4,6 +4,7 @@ describe('SauceLabs',async()=>{
 
     it('Login Page',async()=>{
         await browser.url(SauceLabObjects.URL)
+        await browser.maximizeWindow()
         let title=await browser.getTitle()
         console.log(title)
         await browser.pause(1500)
